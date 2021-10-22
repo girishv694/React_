@@ -13,6 +13,27 @@
   
 }
 
+.back img{
+  width: 10%;
+  height: 80px;
+  margin-left: 500px;
+  margin-top: 30px;
+}
+
+
+.back{
+  width: 1200px;
+  height: 600px;
+  background-color:#EEE;
+  margin: auto;
+  
+}
+
+
+
+
+
+
 *{
   margin: 0;
 }

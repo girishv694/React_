@@ -2,9 +2,10 @@ import React from 'react'
 import CaseStudy from '../CaseStudy'
 
 
-function LogoDate({url,date}) {
+function LogoDate({url,date,classs}) {
     return (
-        <div className="main">
+        
+            <div className={classs}>
             <div className="first">
                 <div> <p>{date}</p></div>
             
