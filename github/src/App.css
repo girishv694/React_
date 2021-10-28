@@ -1,0 +1,27 @@
+.navbar{
+  padding:20px;
+  background-color: rgb(233,224,202);
+}
+.search{
+  display: flex;
+  justify-content: center;
+  padding: 20px 0px;
+  flex-direction: row;
+  gap:20px;
+  margin-bottom: 50px;
+}
+
+.card{
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+margin: auto;
+box-sizing: border-box;
+
+
+}
+
+.imgg{
+  width: 248px;
+  
+}
