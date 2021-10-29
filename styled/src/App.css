@@ -1,0 +1,27 @@
+.App{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+
+  height: 30px;
+  background-color: rgb(0, 60, 255);
+}
+
+.sub{
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin-left: 50%;
+  margin: auto;
+  color: white;
+}
+
+.About{
+  margin-left: 30px;
+  color: beige;
+  margin: auto;
+  width: 80px;
+  background-color:blue;
+  text-align: center;
+  font-size: 18px;
+}
