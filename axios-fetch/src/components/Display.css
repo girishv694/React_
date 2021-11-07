@@ -1,0 +1,10 @@
+.display{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+button{
+    height: 25px;
+}
