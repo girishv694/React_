@@ -1,5 +1,6 @@
 import './App.css';
 import Home from './components/Home'
+import Edit from './components/Edit'
 
 import { BrowserRouter as Router,Switch, Route } from 'react-router-dom'
 import Postt from './components/Postt';
@@ -19,6 +20,10 @@ function App() {
 
         <Route path="/ad">
           <Postt/>
+        </Route>
+
+        <Route path="/edit/:id">
+          <Edit/>
         </Route>
 
         <Route path = '/'>

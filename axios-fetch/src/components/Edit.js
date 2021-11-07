@@ -1,10 +1,12 @@
 import React from 'react'
-import {useState} from 'react'
+import {useState,useEffect} from 'react'
 import axios from 'axios'
-import {useHistory} from 'react-router-dom'
+import {useHistory,useParams} from 'react-router-dom'
 
-function Postt() {
+function Edit() {
     let history = useHistory();
+    const {id} = useParams();
+  
     const [todo,settodo] = useState({
         name:""
     });
@@ -19,23 +21,37 @@ function Postt() {
     }
 
 
+
+
+    const loadTask = async() =>{
+        const result = await axios.get(`http://localhost:3001/todos/${id}`)
+        settodo(result.data)
+    }
+
+    useEffect(()=>{
+        loadTask();
+    },[])
+
+
     const onsubmit =async (e) =>{
         e.preventDefault();
-        await axios.post("http://localhost:3001/todos",todo);
+        await axios.put(`http://localhost:3001/todos/${id}`,todo);
         history.push('/')
         
     }
+
+    
     return (
         <div>
           <form onSubmit={e=>onsubmit(e)}>
               
               <input type="text" placeholder="name" name = "name" value={name} onChange={e=>oninputchange(e)}/><br/><br/>
               
-              <button>Add Todo</button>
+              <button>Update Todo</button>
 
           </form>
         </div>
     )
 }
 
-export default Postt
+export default Edit

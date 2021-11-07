@@ -16,7 +16,7 @@ function Display() {
 
     const fetchData = async () =>{
         const data = await axios.get('http://localhost:3001/todos');
-        console.log(data.data)
+        
         setTodo(data.data)
     }
 
@@ -25,6 +25,8 @@ function Display() {
         fetchData();
 
     }
+
+   
     return (
         <div>
             {
@@ -32,6 +34,7 @@ function Display() {
                     return <div className="display" key={data1.id}>
                     <h2>{data1.name}</h2>
                     <Link className="btn" onClick={()=> deleteTask(data1.id)}>Delete</Link>
+                   <Link to ={`/edit/${data1.id}`}>edit </Link>
                     </div>
                     
                     
