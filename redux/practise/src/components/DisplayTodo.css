@@ -1,0 +1,20 @@
+.main{
+    display: flex;
+    flex-direction: row;
+    
+   background-color:pink;
+    margin: 5px 5px;
+}
+
+.btn{
+    height: 25px;
+    align-self: center;
+    border: none;
+    background-color:lightblue;
+    color: #000;
+    
+
+}
+p{
+    width: 300px;
+}
