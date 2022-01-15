@@ -21,7 +21,7 @@ test('renders KB to MB page ', () => {
 });
 
 test('renders MB to KB page ', () => {
-  expect(Conv(2)).toBe("2048.000");
+  expect(Conv(2)).toBe("2000.000");
 });
 
 

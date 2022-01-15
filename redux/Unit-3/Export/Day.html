@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>app1</title>
+	<link rel="stylesheet" href="css/style.css">
+	<style>
+	p{
+		text-align: 30px;
+	}
+    </style>
+</head>
+<body>
+<div id="nav"></div>
+<div id="data"></div>
+
+</body>
+</html>
+
+<script type="module">
+
+import navbar from './components/Navbar.js';
+
+var nav = document.getElementById("nav");
+
+nav.innerHTML=navbar();
+
+</script>
+
+<script src="components/Day.js"></script>

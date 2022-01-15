@@ -31,6 +31,8 @@ let {id} = useParams();
     return (
         <div>
             <h1>Dashboard</h1>
+
+            <div className="box">
             {
                 data.map((e)=>{
                     return(
@@ -47,6 +49,7 @@ let {id} = useParams();
                     )
                 })
             }
+            </div>
          
         </div>
     )

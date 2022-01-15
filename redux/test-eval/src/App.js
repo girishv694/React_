@@ -23,7 +23,7 @@ function App() {
   const submit= async (e)=>{
     e.preventDefault();
    try {
-      const response = await axios.post("http://localhost:3001/users",user);
+      await axios.post("http://localhost:3001/user",user);
       setmessage("Registered successfully");
        }catch(e){
         setmessage("Something Wrong");

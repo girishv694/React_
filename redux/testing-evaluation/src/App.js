@@ -31,16 +31,16 @@ function App() {
   return (
     <div className="App">
     <h1>KB to MB</h1>
-    <input type="text" placeholder="KB" onChange={(e)=>setData(e.target.value)}/>
-    <button onClick={convert}>Convert to MB</button><br/>
+    <input type="text" placeholder="KB" onChange={(e)=>setData(e.target.value)}/><br/><br/>
+    <button onClick={convert}>Convert to MB</button><br/><br/>
     {/* {data} */}
-    {result}MB
+    {result}:MB
     <hr/>
 
     <h1>MB to KB</h1>
-    <input type="text" placeholder="MB" onChange={(e)=>setData(e.target.value)}/>
-    <button onClick={convertTo}>Convert to KB</button><br/>
-    {kbres}KB
+    <input type="text" placeholder="MB" onChange={(e)=>setData(e.target.value)}/><br/><br/>
+    <button onClick={convertTo}>Convert to KB</button><br/><br/>
+    {kbres}:KB
       
     </div>
   );
