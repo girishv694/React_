@@ -1,0 +1,12 @@
+.data{
+    width:15vw;
+    height: auto;
+    background: rgb(0, 162, 255);
+    color: #fff;
+    margin-left: 10vw;
+    
+}
+.chart{
+    margin-left: 20px;
+    margin-right: auto;
+}
